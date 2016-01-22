@@ -1,0 +1,22 @@
+
+<h1>Listing StudentDetails</h1>
+ 
+<table>
+
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @student.each do |stu| %>
+    <tr>
+      <td><%= stu.id %></td>
+      <td><%= stu.rollNo %></td>
+      <td><%= stu.section %></td>
+       <td><%= stu.standard %></td>
+      <td><%= link_to 'Show', student_path(stu) %></td>
+    </tr>
+  <% end %>
+
+</table>
+ 

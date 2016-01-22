@@ -1,0 +1,22 @@
+
+<p> <%= link_to 'STUDENT DATA', new_student_path %> </p>
+
+<h1>Listing articles</h1>
+ 
+<table>
+
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @article.each do |articl| %>
+    <tr>
+      <td><%= articl.title %></td>
+      <td><%= articl.text %></td>
+      <td><%= link_to 'Show', article_path(articl) %></td>
+    </tr>
+  <% end %>
+
+</table>
+ 

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rollNo: MyString
+  section: MyText
+  standard: MyText
+
+two:
+  rollNo: MyString
+  section: MyText
+  standard: MyText

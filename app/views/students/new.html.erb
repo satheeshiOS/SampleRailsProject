@@ -1,0 +1,21 @@
+<%= form_for @student do |s| %>
+  
+  <p>
+    <%= s.label :RollNo %><br>
+    <%= s.text_field :rollNo %>
+  </p>
+
+  <p>
+    <%= s.label :Section %><br>
+    <%= s.text_field :section %>
+  </p>
+
+  <p>
+    <%= s.label :Standard %><br>
+    <%= s.text_field :standard %>
+  </p>
+
+  <p> <%= s.submit %> </p>
+
+<% end %>
+
