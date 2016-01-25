@@ -5,7 +5,7 @@ class StudentsController < ApplicationController
   end
 
   def create
-  	@student = Student.create(student_params)
+  	@student = Student.create(student_param)
 
   	@student.save
   	redirect_to @student
@@ -21,7 +21,7 @@ class StudentsController < ApplicationController
 
  private
 
-	def student_params
+	def student_param
 		    params.require(:student).permit(:rollNo, :section, :standard)
 	end
 
